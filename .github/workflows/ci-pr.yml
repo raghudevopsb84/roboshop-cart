@@ -1,0 +1,5 @@
+name: Sample CICD - PR
+on: [pull_request]
+jobs:
+  ReUse:
+    uses: raghudevopsb84/roboshop-github-actions/.github/workflows/ci-pr.yml@main
