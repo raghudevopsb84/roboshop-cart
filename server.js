@@ -377,10 +377,23 @@ redisClient.on('ready', (r) => {
     redisConnected = true;
 });
 
-// fire it up!
-const port = process.env.CART_SERVER_PORT || '8080';
-app.listen(port, () => {
+// Export helper functions for testing
+module.exports = {
+  app,
+  calcTotal,
+  calcTax,
+  mergeList,
+  getProduct,
+  saveCart
+};
+
+// Only start the server if this file is run directly
+if (require.main === module) {
+  // fire it up!
+  const port = process.env.CART_SERVER_PORT || '8080';
+  app.listen(port, () => {
     logger.info('Started on port', port);
-});
+  });
+}
 
 //
