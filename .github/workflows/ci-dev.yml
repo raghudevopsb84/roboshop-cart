@@ -1,4 +1,4 @@
-name: CICD - DEV
+name: CI - DEV
 on:
   push:
     branches:

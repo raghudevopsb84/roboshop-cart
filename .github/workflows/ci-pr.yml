@@ -1,4 +1,4 @@
-name: Sample CICD - PR
+name: CI - PR
 on: [pull_request]
 jobs:
   ReUse:
