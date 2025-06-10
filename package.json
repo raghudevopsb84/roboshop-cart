@@ -4,7 +4,8 @@
   "description": "cart REST API",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "author": "SteveW",
   "license": "Apache-2.0",
@@ -19,5 +20,11 @@
       "@instana/collector": "^1.132.2",
       "prom-client": "latest",
       "newrelic" : "latest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "redis-mock": "^0.67.0",
+    "nock": "^13.5.4"
   }
 }
