@@ -24,7 +24,7 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "supertest": "^6.3.4",
-    "redis-mock": "^0.67.0",
+    "redis-mock": "^0.56.3",
     "nock": "^13.5.4"
   }
 }
