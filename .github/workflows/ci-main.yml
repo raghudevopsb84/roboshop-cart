@@ -6,12 +6,11 @@ on:
       - 'main'
 jobs:
   Build:
-    env:
-      vault_token: ${{ secrets.vault_token }}
     uses: raghudevopsb84/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
       appType: 'nodejs'
       appName: 'cart'
       vault_token: '${{ secrets.vault_token }}'
-
+#     env:
+#       vault_token: ${{ secrets.vault_token }}
 
