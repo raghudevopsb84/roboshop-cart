@@ -10,5 +10,4 @@ jobs:
     uses: raghudevopsb84/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
       appType: 'nodejs'
-    secrets:
       vault_token: ${{ env.vault_token }}
