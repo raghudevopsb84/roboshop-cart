@@ -11,4 +11,4 @@ jobs:
     with:
       appType: 'nodejs'
     secrets:
-      vault_token: ${{ secrets.vault_token }}
+      vault_token: ${{ env.vault_token }}
