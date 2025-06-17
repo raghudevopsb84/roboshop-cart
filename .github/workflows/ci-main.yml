@@ -10,7 +10,6 @@ jobs:
     with:
       appType: 'nodejs'
       appName: 'cart'
-    secrets:
-      vault_token: ${{ secrets.vault_token }}
+      vault_token: '${{ secrets.vault_token }}'
 
 
