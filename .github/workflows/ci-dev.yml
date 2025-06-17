@@ -5,8 +5,6 @@ on:
       - 'ROBO-**'
 jobs:
   Build:
-    env:
-      vault_token: ${{ secrets.vault_token }}
     uses: raghudevopsb84/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
       appType: 'nodejs'
