@@ -5,3 +5,4 @@ USER          roboshop
 WORKDIR       /app
 COPY          node_modules node_modules
 COPY          server.js package.json ./
+ENTRYPOINT    ["node", "server.js"]
