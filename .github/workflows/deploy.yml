@@ -1,0 +1,12 @@
+name: Deploy
+on:
+  workflow_dispatch:
+jobs:
+  Dev_Deploy:
+    uses: raghudevopsb84/roboshop-github-actions/.github/workflows/aks-deploy.yml@main
+    with:
+      appName: 'cart'
+      appEnv: 'dev'
+      resourceGroup: 'ukwest-dev'
+    secrets:
+      vault_token: ${{ secrets.vault_token }}
